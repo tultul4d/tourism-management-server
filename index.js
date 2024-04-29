@@ -52,6 +52,13 @@ async function run() {
         res.send(result);
     })
 
+    // app.get('/spot/:id', async (req, res) => {
+    //     console.log(req.params.id);
+    //     console.log(id);
+    //     const result = await spotCollection.find({ email: req.params.id}).toArray();
+    //     res.send(result)
+    //   })
+
   
 
    app.post('/spot' , async(req, res ) =>{
