@@ -72,7 +72,7 @@ async function run() {
     const result = await spotCollection.insertOne(addSpot);
     res.send(result);
    })
-
+// update
    app.put('/spot/:id' , async(req, res) =>{
     const id = req.params.id;
     const filter = {_id: new ObjectId(id)}
