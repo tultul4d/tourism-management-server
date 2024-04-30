@@ -52,12 +52,12 @@ async function run() {
         res.send(result);
     })
 
-    // app.get('/spot/:id', async (req, res) => {
-    //     console.log(req.params.id);
-    //     console.log(id);
-    //     const result = await spotCollection.find({ email: req.params.id}).toArray();
-    //     res.send(result)
-    //   })
+    app.get('/spot-email/:email', async (req, res) => {
+        console.log(req.params.email);
+        // console.log(id);
+        const result = await spotCollection.find({ email: req.params.email}).toArray();
+        res.send(result)
+      })
 
   
 
