@@ -65,7 +65,7 @@ async function run() {
       })
 
   
-
+// post
    app.post('/spot' , async(req, res ) =>{
     const addSpot = req.body;
     console.log(addSpot);
